@@ -107,7 +107,7 @@ int main() {
     auto mapped_reads = simple_reads_mapping(genome, reads, 3);
 
 
-    std::ofstream res("../../res.txt");
+    std::ofstream res("res.txt");
     for (const auto& item : mapped_reads) {
         res << item.first << " " << item.second << std::endl;
     }
