@@ -71,14 +71,14 @@ int main() {
     std::ifstream reads_file;
 
     //std::string genome_file_name = "test_example/genome.fasta";
-    std::string genome_file_name = "genome.fasta";
+    std::string genome_file_name = "../data/genome.fasta";
     genome_file.open(genome_file_name);
     if (!genome_file) {
         throw std::runtime_error("Unable to open file " + genome_file_name);
     }
 
     //std::string reads_file_name = "test_example/reads.txt";
-    std::string reads_file_name = "reads.txt";
+    std::string reads_file_name = "../data/reads.txt";
     reads_file.open(reads_file_name);
     if (!reads_file) {
         throw std::runtime_error("Unable to open file " + reads_file_name);
